@@ -1,0 +1,1 @@
+Prácticas con SQL en base a la teoría estudiada en Bases de Datos - Conceptos y Diseño.
