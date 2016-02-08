@@ -972,34 +972,11 @@ ORDER BY 1,2;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --||||||||||||||||||||||||||||||||||||||||||||
 --||    INSERTAR DATOS DESDE AQRCHIVO SQL   ||
 --||||||||||||||||||||||||||||||||||||||||||||
 
--- @@c:\Users\Tincho\Desktop\UTEC\ProgramacionSQL\Semana2\Material\Instituto_BaseDatos.sql;
+-- @@c:\Users\..\BaseDatos.sql;
 
 
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||
