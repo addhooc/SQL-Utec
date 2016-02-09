@@ -1,0 +1,7 @@
+-- Pseudocolumnas Nextval y Currval
+
+
+SELECT SEQ_ID_PAIS.NEXTVAL, NOMBRE
+FROM PAISES;
+
+SELECT SEQ_ID_PAIS.CURRVAL;
