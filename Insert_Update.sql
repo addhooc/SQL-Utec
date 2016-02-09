@@ -1,10 +1,8 @@
---------------------------------------------.....--...--..||||||||||||||||||||||||||||||||||
---------------------------------------------.....--...--..||||||||||    INSERT    ||||||||||
---------------------------------------------.....--...--..||||||||||||||||||||||||||||||||||
 
--------------------------------
+-- INSERT
+
 -- Máximo ID de la Tabla Paises
--------------------------------
+
 
 SELECT 
 MAX (ID_PAIS)+1 "Próxima ID disponible"
@@ -18,9 +16,8 @@ PERSONAS;
 
 
 
----------------------------------------------------------.....--...--..|||||||||||||||||||||
----------------------------------------------------------.....--...--..|| Insertar Paises ||
----------------------------------------------------------.....--...--..|||||||||||||||||||||
+-- INSERT Paises
+
 
 INSERT 
 INTO PAISES
@@ -46,9 +43,10 @@ INSERT INTO PAISES
 SELECT MAX(ID_PAIS)+1, 'francia'
 FROM PAISES;
 
+--Ver estructura de la tabla
 DESCRIBE PAISES;
 
-INSERT INTO PAISES  --------------------------------------------.....--...--.. INSERT PAIS CON NEXTVALL
+INSERT INTO PAISES  ------------------------.....--...--.. INSERT PAIS CON NEXTVALL
 (ID_PAIS, NOMBRE)
 VALUES
 (SEQ_ID_PAIS.NEXTVAL, 'INDONESIA');
@@ -67,3 +65,17 @@ SELECT NOMBRE PAIS, ID_PAIS IDE
 FROM PAISES
 WHERE ID_PAIS BETWEEN 10 AND 50
 ORDER BY 2;
+
+
+-- UPDATE -- UPPER
+
+
+UPDATE PAISES SET NOMBRE = UPPER(NOMBRE); --Nombres de Países a mayúsculas
+
+UPDATE 
+PAISES
+SET NOMBRE = UPPER(NOMBRE)
+WHERE ID_PAIS = 18;
+
+UPDATE PERSONAS
+SET APELLIDO = UPPER(APELLIDO);
